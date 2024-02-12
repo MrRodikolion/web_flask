@@ -1,7 +1,13 @@
-div {
-   color: #d22e3a;
-   background: black;
-   width: 10px;
-   height: 10px;
-   border-radius: 5px;
+h1 {
+   color: red;
+}
+
+img {
+   width: 50%;
+   height: 50%;
+}
+
+p {
+   font-size: 50%;
+   size: 50%;
 }
