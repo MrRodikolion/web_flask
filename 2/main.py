@@ -28,5 +28,24 @@ def prof(prof):
     return render_template('prof.html', **params)
 
 
+@app.route('/list_prof/<ltype>')
+def list_prof(ltype):
+    params = {
+        'title': 'Список профессий',
+        'ltype': ltype,
+        'prof_list': ['Астронавт-исследователь',
+                      'Инженер-космонавт',
+                      'Биолог',
+                      'Химик',
+                      'Геолог',
+                      'Метеоролог',
+                      'Пилот космического корабля',
+                      'Инженер по связи',
+                      'Инженер по жизнеобеспечению',
+                      'Психолог']
+    }
+    return render_template('list_prof.html', **params)
+
+
 if __name__ == '__main__':
     app.run(port=8080, host='127.0.0.1')
